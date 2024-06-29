@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:flutter/material.dart';
-import 'package:result_dart/result_dart.dart';
-import 'package:quiz/quiz.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import './quiz.dart';
+import './result.dart';
+
+void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -102,24 +99,23 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      appBar: AppBar(
-        title: const Text(
-            'InElement, bendable and unbreakable.. Find your balance'),
-        backgroundColor: Color.fromARGB(255, 184, 220, 122),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(30.0),
-        /*     child: _questionIndex < _questions.length
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Geeks for Geeks'),
+          backgroundColor: const Color(0xFF00E676),
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: _questionIndex < _questions.length
               ? Quiz(
                   answerQuestion: _answerQuestion,
                   questionIndex: _questionIndex,
                   questions: _questions,
                 ) //Quiz
               : Result(_totalScore, _resetQuiz),
-        ),  */ //Padding
+        ), //Padding
       ), //Scaffold
-      // debugShowCheckedModeBanner: false,
-    )); //MaterialApp
+      debugShowCheckedModeBanner: false,
+    ); //MaterialApp
   }
 }
