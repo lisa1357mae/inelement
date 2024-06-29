@@ -104,8 +104,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: const Text('Take your element quiz'),
-        backgroundColor: const Color(0xFF00E676),
+        title: const Text(
+            'InElement, bendable and unbreakable.. Find your balance'),
+        backgroundColor: Color.fromARGB(255, 184, 220, 122),
       ),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
