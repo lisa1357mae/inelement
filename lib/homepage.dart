@@ -12,7 +12,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("HomaPage"),
+        title: Text("Home Page or 1st Route "),
+        backgroundColor: Color.fromARGB(255, 216, 225, 193),
       ),
     );
   }
