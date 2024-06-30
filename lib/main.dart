@@ -102,23 +102,24 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('InElement: Bendable + Unbreakable'),
-          backgroundColor: Color.fromARGB(255, 191, 226, 177),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.all(30.0),
-          child: _questionIndex < _questions.length
-              ? Quiz(
-                  answerQuestion: _answerQuestion,
-                  questionIndex: _questionIndex,
-                  questions: _questions,
-                ) //Quiz
-              : Result(_totalScore, _resetQuiz),
-        ), //Padding
-      ), //Scaffold
-      debugShowCheckedModeBanner: false,
-    ); //MaterialApp
+        home: Scaffold(
+            appBar: AppBar(
+              title: const Text('InElement: Bendable + Unbreakable'),
+              backgroundColor: Color.fromARGB(255, 191, 226, 177),
+            ),
+            body: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Container(
+                  color: Colors.yellow), //_questionIndex < _questions.length
+              /*  Quiz(
+                '', [], 0,
+                //  questionIndex: _questionIndex,
+                //  questions: _questions,
+              ) */ //Quiz
+              //Result(_totalScore, _resetQuiz),
+            ))); //Padding
+    //)); //Scaffold
+    // debugShowCheckedModeBanner: false,
+    //MaterialApp
   }
 }
