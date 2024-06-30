@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter/material.dart';
 import 'package:result_dart/result_dart.dart';
@@ -121,5 +121,160 @@ class _MyAppState extends State<MyApp> {
     //)); //Scaffold
     // debugShowCheckedModeBanner: false,
     //MaterialApp
+  }
+}
+ */
+
+import 'package:flutter/material.dart';
+
+import 'homepage.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key? key}) : super(key: key);
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("InElement Bendable+Unbreakable: Find your Balance"),
+        backgroundColor: Color.fromARGB(255, 216, 225, 193),
+      ),
+      body: Container(
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: GridView(
+            children: [
+              InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => HomePage()));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Color.fromARGB(255, 167, 186, 150),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.water,
+                        size: 50,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        "Water",
+                        style: TextStyle(color: Colors.white, fontSize: 30),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => HomePage()));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Color.fromARGB(255, 223, 216, 160)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.fireplace,
+                        size: 50,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        "Fire",
+                        style: TextStyle(color: Colors.white, fontSize: 30),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => HomePage()));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Color.fromARGB(255, 188, 174, 125)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.circle,
+                        size: 50,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        "Earth",
+                        style: TextStyle(color: Colors.white, fontSize: 30),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => HomePage()));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Color.fromARGB(255, 234, 200, 149)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.cloud,
+                        size: 50,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        "Air",
+                        style: TextStyle(color: Colors.white, fontSize: 30),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ],
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
+          ),
+        ),
+      ),
+    );
   }
 }
