@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:flutter/material.dart';
+import 'package:result_dart/result_dart.dart';
+import 'package:quiz/quiz.dart';
 
-import './quiz.dart';
-import './result.dart';
-
-void main() => runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -101,8 +104,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Geeks for Geeks'),
-          backgroundColor: const Color(0xFF00E676),
+          title: const Text('InElement: Bendable + Unbreakable'),
+          backgroundColor: Color.fromARGB(255, 191, 226, 177),
         ),
         body: Padding(
           padding: const EdgeInsets.all(30.0),
