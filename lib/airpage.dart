@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class EarthPage extends StatefulWidget {
-  const EarthPage({Key? key}) : super(key: key);
+class AirPage extends StatefulWidget {
+  const AirPage({Key? key}) : super(key: key);
 
   @override
-  _EarthPageState createState() => _EarthPageState();
+  _AirPageState createState() => _AirPageState();
 }
 
-class _EarthPageState extends State<EarthPage> {
+class _AirPageState extends State<AirPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,7 @@ class _EarthPageState extends State<EarthPage> {
                       shape: BoxShape.circle,
                     ),
                     child: Icon(
-                      Icons.circle,
+                      Icons.cloud,
                       color: Colors.white,
                     ),
                   ),
@@ -45,12 +45,12 @@ class _EarthPageState extends State<EarthPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Earth element (purthavī-dhātu)",
+                          "Air element",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 16),
                         ),
                         const Text(
-                            "Earth element represents the quality of solidity or attractive fuorces. Any matter where attractive forces are in prominence (solid bodies) are called earth elements.")
+                            "Air (or wind) element (vāyu-dhātu) Air element represents the quality of expansion or repulsive forces. Any mattter where repulsive forces are in prominence are called air elements")
                       ],
                     ),
                   ),

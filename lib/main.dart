@@ -128,6 +128,7 @@ class _MyAppState extends State<MyApp> {
 import 'package:flutter/material.dart';
 import 'package:inelement/earthpage.dart';
 
+import 'airpage.dart';
 import 'waterpage.dart';
 
 void main() {
@@ -248,7 +249,7 @@ class _MyHomePageState extends State<MyHomePage> {
               InkWell(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomePage()));
+                      MaterialPageRoute(builder: (context) => AirPage()));
                 },
                 child: Container(
                   decoration: BoxDecoration(
