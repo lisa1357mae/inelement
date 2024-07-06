@@ -160,8 +160,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("InElement Bendable+Unbreakable: Find your Balance"),
-        backgroundColor: Color.fromARGB(255, 216, 225, 193),
+        title: const Text("InElement Bendable+Unbreakable: Find your Balance"),
+        backgroundColor: const Color.fromARGB(255, 216, 225, 193),
       ),
       body: Container(
         child: Padding(
@@ -270,7 +270,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ],
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
           ),
         ),

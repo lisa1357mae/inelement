@@ -11,10 +11,53 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Home Page or 1st Route "),
-        backgroundColor: Color.fromARGB(255, 216, 225, 193),
-      ),
-    );
+        appBar: AppBar(
+          title:
+              const Text("InElement Bendable+Unbreakable: Find your Balance"),
+          backgroundColor: const Color.fromARGB(255, 216, 225, 193),
+        ),
+        body: Align(
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+              color: Colors.white,
+              padding: const EdgeInsets.all(10),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.water,
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Water element (āpa-dhātu)",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 16),
+                        ),
+                        Text(
+                            "Water element represents the quality of liquidity or relative montion. Any matter where relative motion of particles is in prominence are called ater elements.")
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ));
   }
 }
