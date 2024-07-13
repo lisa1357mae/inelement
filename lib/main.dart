@@ -128,6 +128,7 @@ class _MyAppState extends State<MyApp> {
 import 'package:flutter/material.dart';
 import 'package:inelement/earthpage.dart';
 import 'package:inelement/firepage.dart';
+import 'package:inelement/videoplayerscreen.dart';
 
 import 'airpage.dart';
 import 'waterpage.dart';
@@ -199,8 +200,10 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => FirePage()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => VideoPlayerScreen()));
                 },
                 child: Container(
                   decoration: BoxDecoration(

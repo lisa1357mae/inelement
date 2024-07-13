@@ -38,6 +38,8 @@ dependencies:
   result_dart: ^1.1.0
   quiz: ^0.0.2
   audioplayers: ^3.0.1
+  video_player: ^2.6.1
+  video_player_web: ^2.0.16
 
 dev_dependencies:
   flutter_test:
