@@ -28,28 +28,28 @@ class _EarthPageState extends State<EarthPage> {
                   Container(
                     width: 50,
                     height: 50,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.blue,
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.circle,
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text(
                           "Earth element (purthavī-dhātu)",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 16),
                         ),
-                        const Text(
+                        Text(
                             "Earth element represents the quality of solidity or attractive fuorces. Any matter where attractive forces are in prominence (solid bodies) are called earth elements.")
                       ],
                     ),

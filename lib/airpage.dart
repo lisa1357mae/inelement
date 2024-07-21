@@ -31,28 +31,28 @@ class _AirPageState extends State<AirPage> {
                   Container(
                     width: 50,
                     height: 50,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.blue,
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.cloud,
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text(
                           "Air element",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 16),
                         ),
-                        const Text(
+                        Text(
                             "Air (or wind) element (vāyu-dhātu) Air element represents the quality of expansion or repulsive forces. Any mattter where repulsive forces are in prominence are called air elements")
                       ],
                     ),
