@@ -36,6 +36,10 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     // or the internet.
     _controller = VideoPlayerController.network(
       'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
+
+      // 'https://videos.pexels.com/video-files/9942570/9942570-hd_1920_1080_25fps.mp4' //note use this for air element
+
+      // 'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
       /*   Uri.parse(
         'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
       ), */
