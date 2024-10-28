@@ -28,22 +28,22 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     width: 50,
                     height: 50,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.blue,
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.water,
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text(
                           "Water element (āpa-dhātu)",
                           style: TextStyle(
